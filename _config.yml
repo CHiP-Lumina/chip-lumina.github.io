@@ -1,0 +1,97 @@
+# Site settings
+title: "CHiP"
+full_name: "Chip - Lumina Project"
+name: "Lumina Project"
+email: fendt@mit.edu
+description: > # this means to ignore newlines until "baseurl:"
+  This is the collaborative site for CHiP, a cool history project.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://chip-project.github.io/chip-lumina.github.io/" # the base hostname & protocol for your site
+twitter_username: chip-lumina
+github_username: fendt
+permalink: none
+theme: jekyll-theme-cayman
+
+# Build settings
+markdown: kramdown
+
+prose:
+  rooturl: '_posts'
+  siteurl: "https://chip-project.github.io/chip-lumina.github.io/"
+  relativeLinks: 'https://chip-project.github.io/chip-lumina.github.io/links.jsonp'
+  media: 'assets'
+  metadata:
+    _posts:
+      - name: "published"
+        field:
+          element: "checkbox"
+          label: "Publish"
+      - name: "author"
+        field:
+          element: "text"
+          label: "Author"
+          placeholder: "your name, or your team's name"
+      - name: "category"
+        field:
+          element: "select"
+          label: "Category"
+          options:
+            - name: "Project Update"
+              value: "updates"
+            - name: "Reading Commentary"
+              value: "commentary"
+            - name: "Bio"
+              value: "people"
+            - name: "DH Projects"
+              value: "ext-projects"
+            - name: "Data Set"
+              value: "datasets"
+            - name: "About"
+              value: "course"
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Readings"
+          placeholder: "Choose Reading(s)"
+          options:
+            - name: "Digital_Humanities"
+              value: "Digital_Humanities"
+            - name: "Cartographies of Time"
+              value: "Cartographies of Time"
+            - name: "Spatial Humanities"
+              value: "Spatial Humanities"
+            - name: "The Database"
+              value: "The Database"
+            - name: "Museum"
+              value: "Museum"
+            - name: "Augmented Space"
+              value: "Augmented Space"
+            - name: "Sonification"
+              value: "Sonification"
+            - name: "Participatory Culture"
+              value: "Participatory Culture"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+
+    _posts/static:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "page"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "Permalink"
+          value: ""
