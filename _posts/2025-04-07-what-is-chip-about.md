@@ -1,8 +1,9 @@
 ---
 layout: post
-published: false
-category: updates
+published: true
+category: datasets
 title: What is CHiP about?
+author: CHiP Team
 ---
 Unlocking the secrets of highly diverse documents stored in historical archives is crucial for advancing historical research and gaining a deeper, more nuanced understanding of the past.
 
