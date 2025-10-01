@@ -2,12 +2,12 @@
 layout: post
 published: false
 category: updates
-title: ''
+title: Workshop in Prague
 author: Kurt
 tags:
   - Digital_Humanities
 ---
-## Worksupp in Prague, October 2025
+## Workshop in Prague, October 2025
 
 Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
 
