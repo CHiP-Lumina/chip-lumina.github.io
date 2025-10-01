@@ -1,7 +1,7 @@
 ---
 layout: post
 published: false
-category: updates
+category: commentary
 title: Workshop in Prague
 author: Kurt
 tags:
