@@ -4,7 +4,7 @@ published: true
 category: people
 title: Tomáš Musil (Machine Learning Researcher)
 author: Tomáš Musil
-tags: ''
+display-rank: 3
 ---
 
 ![Tomáš Musil]({{site.baseurl}}/assets/hegel.jpg)
