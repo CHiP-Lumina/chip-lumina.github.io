@@ -1,3 +1,5 @@
+@use "variables" as *;
+
 /**
  * Reset some basic elements
  */
@@ -30,8 +32,7 @@ body {
  */
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
+ul, ol, dl, figure {
     margin-bottom: $spacing-unit / 2;
 }
 
@@ -93,14 +94,14 @@ a {
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: $brand-color-dark;
     }
 
     &:hover {
         color: $text-color;
         text-decoration: underline;
     }
-    
+
     &[href=""] {
     	color: $grey-color-light;
     }
@@ -171,20 +172,6 @@ pre {
         max-width:         calc(#{$content-width} - (#{$spacing-unit}));
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
-    }
-}
-
-
-
-/**
- * Clearfix
- */
-%clearfix {
-
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
     }
 }
 
