@@ -13,5 +13,5 @@ Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the 
 
 ###[MIT](web.mit.edu) Participants###
 
-![talmud.jpg]({{site.baseurl}}/assets/talmud.jpg)
+![title-page-image.png]({{site.baseurl}}/assets/title-page-image.png)
 **We met for three days**.
