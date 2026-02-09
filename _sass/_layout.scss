@@ -4,25 +4,30 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
+    background-color: $code-bg-color;
     min-height: 56px;
-
-    // Positioning context for the mobile navigation icon
     position: relative;
 }
 
 .site-title {
-    font-size: 42px;
+    font-family: $heading-font-family;
+    font-size: 36px;
+    font-weight: 600;
     line-height: 56px;
-    letter-spacing: -1px;
+    letter-spacing: 1px;
     margin-bottom: 0;
     display: block;
     text-align: center;
 
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: $text-color;
+    }
+
+    &:hover {
+        text-decoration: none;
+        color: $brand-color;
     }
 }
 
@@ -37,10 +42,17 @@
     .page-link {
         color: $text-color;
         line-height: $base-line-height;
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
 
-        // Gaps between nav items, but not on the first one
         &:not(:first-child) {
-            margin-left: 20px;
+            margin-left: 24px;
+        }
+
+        &:hover {
+            color: $brand-color;
+            text-decoration: none;
         }
     }
 
@@ -85,6 +97,8 @@
         .page-link {
             display: block;
             padding: 5px 10px;
+            text-transform: none;
+            letter-spacing: 0;
         }
     }
 }
@@ -159,15 +173,64 @@
     }
 }
 
-.home-image {
-	width: 74%;
-	margin: 0 auto;
-	text-align: center;
 
-	@include media-query($on-laptop) {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
+/**
+ * Homepage hero
+ */
+.home-hero {
+    display: flex;
+    align-items: flex-start;
+    gap: $spacing-unit;
+    margin-bottom: $spacing-unit;
+
+    @include media-query($on-laptop) {
+        flex-direction: column;
+        align-items: center;
     }
+}
+
+.home-hero-image {
+    flex: 0 0 45%;
+    max-width: 45%;
+
+    img {
+        width: 100%;
+        border: 1px solid $grey-color-light;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    @include media-query($on-laptop) {
+        flex: none;
+        max-width: 80%;
+    }
+}
+
+.home-hero-text {
+    flex: 1;
+    padding-top: $spacing-unit / 2;
+
+    h2 {
+        font-family: $heading-font-family;
+        font-size: 28px;
+        margin-bottom: $spacing-unit / 2;
+        color: $brand-color;
+    }
+
+    p {
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
+    @include media-query($on-laptop) {
+        padding-top: 0;
+    }
+}
+
+.caption {
+	font-size: $base-font-size * 0.8;
+    color: $grey-color;
+	margin-bottom: 0px;
+    margin-top: 4px;
 }
 
 ul.home-links {
@@ -189,11 +252,6 @@ ul.home-links {
 	}
 }
 
-.caption {
-	font-size: $base-font-size * 0.8;
-	margin-bottom: 0px;
-}
-
 
 /**
  * Page content
@@ -212,6 +270,7 @@ ul.home-links {
 
     > li {
         margin-bottom: $spacing-unit;
+        padding-bottom: $spacing-unit / 2;
         border-bottom: 1px $grey-color-light solid;
     }
 
@@ -221,6 +280,10 @@ ul.home-links {
 
     a.post-link {
     	color: $text-color;
+
+        &:hover {
+            color: $brand-color;
+        }
     }
 }
 
@@ -231,6 +294,7 @@ ul.home-links {
 
 .post-link {
     display: block;
+    font-family: $heading-font-family;
     font-size: 24px;
 }
 
@@ -246,7 +310,8 @@ ul.home-links {
 .post-title {
     font-size: 42px;
     letter-spacing: -1px;
-    line-height: 1;
+    line-height: 1.1;
+    color: $text-color;
 
     @include media-query($on-laptop) {
         font-size: 36px;
@@ -255,6 +320,12 @@ ul.home-links {
 
 .post-content {
     margin-bottom: $spacing-unit;
+
+    img {
+        border: 1px solid $grey-color-light;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        border-radius: 2px;
+    }
 
     h2 {
         font-size: 32px;
@@ -283,16 +354,23 @@ ul.home-links {
 
 .bio-post {
 	@extend %clearfix;
+    border: 1px solid $grey-color-light;
+    border-radius: 4px;
+    padding: $spacing-unit / 2;
+    margin-bottom: $spacing-unit;
+    background-color: $code-bg-color;
 
 	img {
 		max-width: 200px;
 		float: left;
 		margin-right: $spacing-unit / 2;
 		margin-bottom: $spacing-unit;
+        border: 1px solid $grey-color-light;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
 
         @include media-query($on-palm) {
 			float: none;
-			margin-bottom: 0px;
+			margin-bottom: $spacing-unit / 2;
 		}
 	}
 }
