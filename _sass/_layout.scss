@@ -278,6 +278,10 @@ ul.home-links {
     	border: none;
     }
 
+    > li.bio-post {
+        border: 1px solid $grey-color-light;
+    }
+
     a.post-link {
     	color: $text-color;
 
@@ -364,7 +368,7 @@ ul.home-links {
 		max-width: 200px;
 		float: left;
 		margin-right: $spacing-unit / 2;
-		margin-bottom: $spacing-unit;
+		margin-bottom: $spacing-unit / 2;
         border: 1px solid $grey-color-light;
         box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
 
@@ -373,6 +377,10 @@ ul.home-links {
 			margin-bottom: $spacing-unit / 2;
 		}
 	}
+
+    .post-content p:not(:first-child) {
+        overflow: hidden;
+    }
 }
 
 .archive-notice {
