@@ -1,5 +1,4 @@
 # Site settings
-theme: jekyll-theme-midnight
 sass:
   quiet_deps: true
 title: "Connected History Project"
