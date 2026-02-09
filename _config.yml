@@ -3,11 +3,11 @@ theme: jekyll-theme-midnight
 sass:
   quiet_deps: true
 title: "Connected History Project"
-full_name: "CHiP - Connected History Project - Lumina"
-name: "Connected History Project - Lumina (CHiP)"
+full_name: "CHiP - Connected History Project"
+name: "Connected History Project (CHiP)"
 email: vondracek@mua.cas.cz
 description: > # this means to ignore newlines until "baseurl:"
-  This is the collaborative site for CHiP, a cool history project.
+  This is the collaborative site for CHiP, the Conected History Project.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://chip-lumina.github.io/" # the base hostname & protocol for your site
 permalink: none

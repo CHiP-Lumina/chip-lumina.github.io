@@ -2,7 +2,7 @@
 layout: post
 published: true
 category: people
-title: Jan Vondráček
+title: Jan Vondráček (PI)
 display-rank: 2
 ---
 
