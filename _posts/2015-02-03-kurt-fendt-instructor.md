@@ -4,7 +4,7 @@ published: true
 title: Kurt Fendt (Co-PI)
 category: people
 author: Kurt Fendt
-display-rank: 1
+display-rank: 2
 ---
 
 ![Kurt.jpg](/assets/Kurt.jpg)

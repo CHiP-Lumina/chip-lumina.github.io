@@ -3,7 +3,7 @@ layout: post
 published: true
 category: people
 title: Jan Vondráček (PI)
-display-rank: 2
+display-rank: 1
 ---
 
 ![Jan Vondráček]({{site.baseurl}}/assets/vondracek.jpg)
